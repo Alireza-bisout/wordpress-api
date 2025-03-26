@@ -114,12 +114,12 @@ export default function Home() {
       </nav>
 
       {/* section-header */}
-      <header id="header" className="container mt-5">
+      <header className={`${styles['header']} container mt-5`}>
         <div>
           <div className="row">
             <div className="col-lg-6 d-none d-lg-block mt-5 wow animate__animated animate__fadeIn animate__fadeInRight">
               <div>
-                <div className="img-header">
+                <div className={`${styles['img-header']} `}>
                   <img src="img/image.png" alt />
                 </div>
               </div>
@@ -129,7 +129,7 @@ export default function Home() {
                 <div className="swiper-wrapper">
                   <div className="swiper-slide">
                     <div className="container-header">
-                      <div className="imge-shado">
+                      <div className={`${styles['imge-shado']} `}>
                         <img src="img/rectangle-light.png" alt />
                       </div>
                       <div className="content-header p-3">
@@ -894,8 +894,8 @@ export default function Home() {
       </section>
 
       {/* footer */}
-      <footer id="footer" className="container-fluid mt-5 pt-3">
-        <div className="container p-4">
+      <footer className={`${styles['footer']} container-fluid mt-5 pt-3`}>
+        <div className={`${styles['container']} container p-4`}>
           <div className="row">
             <div className="col-lg-4 col-md-12">
               <div className="box-footer p-5 mt-3">
@@ -919,7 +919,7 @@ export default function Home() {
             </div>
             {/* md lg */}
             <div className="col-lg-8 col-md-12 d-none d-md-block">
-              <div className="mnu-footer d-flex justify-content-center align-content-center mt-3">
+              <div className={`${styles['mnu-footer']} d-flex justify-content-center align-content-center mt-3`}>
                 <div className="row">
                   <div className="col-6 d-flex align-items-center justify-content-center">
                     <div className="lh-lg p-4">
