@@ -2,6 +2,7 @@ import { faBuilding, faComments, faFolder, faPaperPlane, faUser } from "@fortawe
 import { faArrowLeft, faArrowUp, faBagShopping, faBars, faBook, faBookOpen, faBoxOpen, faBrush, faCloud, faMapLocation, faMapLocationDot, faPhone, faPhoneFlip, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styles from "./HomePageTemplate.module.css"
+import Articels from "@/components/module/HomePageModule/Articels/Articels";
 
 function HomePageTemplate() {
     return (
@@ -425,54 +426,8 @@ function HomePageTemplate() {
                     </div>
                 </div>
             </section>
-
-            {/* section-Article */}
-            <section className={`${styles['article']} mt-5`}>
-                <div className="container">
-                    <div>
-                        <div className=" d-flex justify-content-center fade-away p-3">وبلاگ ما</div>
-                        <h3 className="h-3 d-flex justify-content-center text-highlight pb-4">جدیدترین مقالات ما را بخوانید</h3>
-                    </div>
-                    <div className="swiper articleSwiper pt-4 pb-4 p-2 wow animate__animated animate__fadeIn">
-                        <div className="swiper-wrapper">
-                            <div className="swiper-slide">
-                                <div className={`${styles['box-article']} p-4`}>
-                                    <div className={`${styles['img-article']} `}>
-                                        <img src="/image/article.jpg" alt />
-                                        <div className={`${styles['title-img']} `}>
-                                            <a href>مقاله</a>
-                                        </div>
-                                    </div>
-                                    <div className="content-article">
-                                        <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">پیشنهاد یک سبد سرمایه‌گذاری مناسب
-                                            برای
-                                            خانواده‌های با درآمد متوسط چه می تواند باشد</a></h3>
-                                        <p className="text-lin-sm fade-away lh-lg pt-2">خانواده‌های با درآمد متوسط و کم اغلب با
-                                            چالش‌هایی در زمینه سرمایه‌گذاری روبرو هستند.</p>
-                                        <div className={`${styles['footer-article']} pt-4`}>
-                                            <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                                                <a href="#">
-                                                    <FontAwesomeIcon icon={faArrowLeft} />
-                                                </a>
-                                            </span>
-                                            <div className="fade-away">
-                                                <span className="ps-3">
-                                                    <i className="fa-regular fa-calendar" />
-                                                    <span>5 بهمن 1403</span>
-                                                </span>
-                                                <span>
-                                                    <i className="fa-regular fa-message" />
-                                                    <span>1 دیدگاه</span>
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            
+            <Articels />
 
             {/* footer */}
             <footer className={`${styles['footer']} container-fluid mt-5 pt-3`}>
