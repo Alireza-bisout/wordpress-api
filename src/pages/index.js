@@ -1,5 +1,8 @@
 // import { useEffect, useState } from "react";
 import styles from "@/styles/Home.module.css"
+import { faBuilding, faComments, faFolder, faPaperPlane, faUser } from "@fortawesome/free-regular-svg-icons";
+import { faArrowLeft, faArrowUp, faBagShopping, faBars, faBook, faBookOpen, faBoxOpen, faBrush, faCloud, faMapLocation, faMapLocationDot, faPhone, faPhoneFlip, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   // const [posts, setPosts] = useState([]);
@@ -97,14 +100,16 @@ export default function Home() {
                 <div className={`${styles['mnu-button']}  d-none d-md-block`}>
                   <a href="#">
                     <span className={`${styles['arow-btn']} `}>
-                      <i className="fa-solid fa-arrow-left" />
+                      <FontAwesomeIcon icon={faArrowLeft} />
                     </span>
                     <span>بیشتر بدانید</span>
                   </a>
                 </div>
                 <div className="d-flex justify-content-center">
                   <div className={`${styles['icon-Sidebar']} d-flex justify-content-center align-items-center`}>
-                    <a href="#"><i className="fa-solid fa-bars" /></a>
+                    <a href="#">
+                      <FontAwesomeIcon icon={faBars} />
+                    </a>
                   </div>
                 </div>
               </div>
@@ -113,93 +118,6 @@ export default function Home() {
         </div>
       </nav>
 
-      {/* section-header */}
-      <header className={`${styles['header']} container mt-5`}>
-        <div>
-          <div className="row">
-            <div className="col-lg-6 d-none d-lg-block mt-5 wow animate__animated animate__fadeIn animate__fadeInRight">
-              <div>
-                <div className={`${styles['img-header']} `}>
-                  <img src="img/image.png" alt />
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-6 col-md-12 mt-5 wow animate__animated animate__fadeIn animate__fadeInLeft">
-              <div className="swiper header-Swiper pt-4 pb-4">
-                <div className="swiper-wrapper">
-                  <div className="swiper-slide">
-                    <div className="container-header">
-                      <div className={`${styles['imge-shado']} `}>
-                        <img src="img/rectangle-light.png" alt />
-                      </div>
-                      <div className="content-header p-3">
-                        <div className="p-5">
-                          <span className="fs-6">بیمه بازنشستگی</span>
-                          <h3 className=" h-3 text-highlight p-2 fs-3 fw-bold"> مشاغل آزاد پلتفرم های
-                            اینترنتی
-                          </h3>
-                          <p className="fade-away lh-lg p-2 text-lin-lg">به عنوان شخصی که رانندگی را به
-                            عنوان حرفه اصلی خود انتخاب کرده اید، پیشنهاد می کنیم که یک بیمه نامه
-                            بازنشستگی خریداری کنید. در این صفحه چند سوال کلیدی را پاسخ می دهیم.</p>
-                        </div>
-                        <div className={`${styles['button-header']} d-flex align-items-center`}>
-                          <div> <a className={`${styles['btn-free']} fs-6`} href="#">مشاهده بیمه</a></div>
-                          <div> <a className={`${styles['btn-see']} fs-6`} href="#">سوالات متداول</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="container-header">
-                      <div className="imge-shado">
-                        <img src="img/rectangle-light.png" alt />
-                      </div>
-                      <div className="content-header p-3">
-                        <div className="p-5">
-                          <span className="fs-6">بیمه بازنشستگی</span>
-                          <h3 className="h-3 text-highlight p-2 fs-3 fw-bold"> طرح ویژه برای تمام اعضای
-                            خانواده
-                          </h3>
-                          <p className="fade-away lh-lg p-2 text-lin-lg">به عنوان شخصی که رانندگی را به
-                            عنوان حرفه اصلی خود انتخاب کرده اید، پیشنهاد می کنیم که یک بیمه نامه
-                            بازنشستگی خریداری کنید. در این صفحه چند سوال کلیدی را پاسخ می دهیم.</p>
-                        </div>
-                        <div className={`${styles['button-header']} d-flex align-items-center`}>
-                          <div> <a className={`${styles['btn-free']} fs-6`}  href="#">مشاهده بیمه</a></div>
-                          <div> <a className={`${styles['btn-see']} fs-6`}  href="#">سوالات متداول</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                    <div className="container-header">
-                      <div className="imge-shado">
-                        <img src="img/rectangle-light.png" alt />
-                      </div>
-                      <div className="content-header p-3">
-                        <div className="p-5">
-                          <span className="fs-6">بیمه بازنشستگی</span>
-                          <h3 className="h-3 text-highlight p-2 fs-3 fw-bold"> بانوان گرامی و سرپرست
-                            خانوار
-                          </h3>
-                          <p className="fade-away lh-lg p-2 text-lin-lg">واقعا چه چیزی می تواند آرامش خاطر
-                            یک زن، مادر یا همسر را ایجاد کند به جز اطمینان به آینده. ولی برای ایجاد
-                            این اطمینان چه کاری باید انجام دهیم و بهترین مشاوره چیست. </p>
-                        </div>
-                        <div className={`${styles['button-header']} d-flex align-items-center`}>
-                          <div> <a className={`${styles['btn-free']} `} href="#">مشاهده بیمه</a></div>
-                          <div> <a className={`${styles['btn-free']} `} href="#">سوالات متداول</a></div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-pagination" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* section-info-company */}
       <section className={`${styles['section-company']} container mt-5 mb-5 wow animate__animated animate__fadeIn`}>
@@ -215,14 +133,16 @@ export default function Home() {
                 <div className={`${styles['arow-button']} `}>
                   <a href="#">
                     <span className={`${styles['arow']} `}>
-                      <i className="fa-solid fa-arrow-left" />
+                      <FontAwesomeIcon icon={faArrowLeft} />
                     </span>
                     <span>بیشتر بدانید</span>
                   </a>
                 </div>
                 <div className={`${styles['content-phone']} d-none d-md-block`}>
                   <span>
-                    <i className="fa-solid fa-phone" />
+
+                    <FontAwesomeIcon icon={faPhone} />
+
                   </span>
                   <div className={`${styles['number-phone']} `}>
                     <span className="fade-away">شماره تلفن</span>
@@ -233,7 +153,7 @@ export default function Home() {
               <div className="row">
                 <div className="col-md-6">
                   <div className={`${styles['card-company']} wow animate__animated animate__bounceInDown`}>
-                    <i className="fa-regular fa-building" />
+                    <FontAwesomeIcon icon={faBuilding} />
                     <h4 className=" h-4 p-2 f-4">بهترین تجربه بیمه</h4>
                     <p className="p-0">در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
                       راهکارها و
@@ -245,7 +165,7 @@ export default function Home() {
                 </div>
                 <div className="col-md-6">
                   <div className={`${styles['card-company']} wow animate__animated animate__bounceInUp`}>
-                    <i className="fa-solid fa-map-location-dot" />
+                    <FontAwesomeIcon icon={faMapLocationDot} />
                     <h4 className="h-4 p-2">نقشه راه پروژه ها</h4>
                     <p className=" fade-away p-0">در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
                       راهکارها و
@@ -267,7 +187,7 @@ export default function Home() {
       </section>
 
       {/* section-Achievement */}
-      <section  className={`${styles['Achievement']} container-fluid`}>
+      <section className={`${styles['Achievement']} container-fluid`}>
         <div className="title-Achievement mt-5 mb-5 pt-5 ">
           <div className=" d-flex justify-content-center fade-away p-3">پروژه های ما</div>
           <h3 className="h-3 d-flex justify-content-center text-highlight fs-3 fw-bold">بهترین کار های ما در چند سال گذشته
@@ -295,7 +215,7 @@ export default function Home() {
                   <div className={`${styles['arow-button']} p-4`}>
                     <a href="#">
                       <span className={`${styles['arow']} `}>
-                        <i className="fa-solid fa-arrow-left" />
+                        <FontAwesomeIcon icon={faArrowLeft} />
                       </span>
                       <span>بیشتر بدانید</span>
                     </a>
@@ -314,7 +234,7 @@ export default function Home() {
               <div className="col-lg-4 col-md-6 col-sm-12">
                 <div className={`${styles['box-Winner']} p-2`}>
                   <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-trophy" />
+                    <FontAwesomeIcon icon={faTrophy} />
                   </div>
                   <div className={`${styles['content-box']} `}>
                     <span className="color-white fs-6">معرف طرح ویژه</span>
@@ -325,9 +245,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className={`${styles['box-Winner']} p-2`}>
-              <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-box-open" />
+                <div className={`${styles['box-Winner']} p-2`}>
+                  <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faBoxOpen} />
                   </div>
                   <div className={`${styles['content-box']} `}>
                     <span className="color-white fs-6">در طرح ویژه بازنشستگی</span>
@@ -339,9 +259,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className={`${styles['box-Winner']} p-2`}>
-              <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-cloud" />
+                <div className={`${styles['box-Winner']} p-2`}>
+                  <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faCloud} />
                   </div>
                   <div className={`${styles['content-box']} `}>
                     <span className="color-white fs-6">در طرح ویژه بازنشستگی</span>
@@ -353,9 +273,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className={`${styles['box-Winner']} p-2`}>
-              <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-comments" />
+                <div className={`${styles['box-Winner']} p-2`}>
+                  <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faComments} />
                   </div>
                   <div className={`${styles['content-box']} `}>
                     <span className="color-white fs-6">تعاریف پایه</span>
@@ -366,9 +286,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className={`${styles['box-Winner']} p-2`}>
-              <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-book-open" />
+                <div className={`${styles['box-Winner']} p-2`}>
+                  <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faBookOpen} />
                   </div>
                   <div className={`${styles['content-box']} `}>
                     <span className="color-white fs-6">توصیه های مهم</span>
@@ -379,9 +299,9 @@ export default function Home() {
                 </div>
               </div>
               <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className={`${styles['box-Winner']} p-2`}>
-              <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-brush" />
+                <div className={`${styles['box-Winner']} p-2`}>
+                  <div className={`${styles['icon-winner']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faBrush} />
                   </div>
                   <div className={`${styles['content-box']} `}>
                     <span className="color-white fs-6">توصیه های مهم</span>
@@ -396,9 +316,9 @@ export default function Home() {
           </div>
           <div className={`${styles['Winner-cover']} `} />
         </div>
-        <div className={`${styles['Achievement-cover']} `}/>
+        <div className={`${styles['Achievement-cover']} `} />
       </section>
-      
+
 
       {/* section-Status-board */}
       <section className={`${styles['status-board']} `}>
@@ -413,7 +333,7 @@ export default function Home() {
                 <div className={`${styles['arow-button-Status']} p-3`}>
                   <a href="#">
                     <span className={`${styles['arow-Status']} `}>
-                      <i className="fa-solid fa-arrow-left" />
+                      <FontAwesomeIcon icon={faArrowLeft} />
                     </span>
                     <span>بیشتر بدانید</span>
                   </a>
@@ -424,7 +344,7 @@ export default function Home() {
               <div className="statistics row p-5">
                 <div className="col-lg-3 col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center mb-3">
                   <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-book" />
+                    <FontAwesomeIcon icon={faBook} />
                   </div>
                   <div className="color-white text-center">
                     <div className="fs-2 fw-bold pt-3">
@@ -435,8 +355,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center mb-3">
-                <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-folder" />
+                  <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faFolder} />
                   </div>
                   <div className="color-white text-center">
                     <div className="fs-2 fw-bold pt-3">
@@ -447,8 +367,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center mb-3">
-                <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-user" />
+                  <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faUser} />
                   </div>
                   <div className="color-white text-center">
                     <div className="fs-2 fw-bold pt-3">
@@ -459,8 +379,8 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-lg-3 col-md-3 col-sm-6 col-6 d-flex flex-column align-items-center mb-3">
-                <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
-                    <i className="fa-solid fa-bag-shopping" />
+                  <div className={`${styles['icon-status']} d-flex justify-content-center align-items-center`}>
+                    <FontAwesomeIcon icon={faBagShopping} />
                   </div>
                   <div className="color-white text-center">
                     <div className="fs-2 fw-bold pt-3">
@@ -523,107 +443,6 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <div className="swiper-slide">
-                  <div className={`${styles['box-Comment']} p-5`}>
-                      <div className="pb-4">
-                        <img className="rounded-circle" src="img/avatar-2.png" alt />
-                      </div>
-                      <div className=" d-flex justify-content-between justify-content-center align-items-center">
-                        <div>
-                          <span className="fs-5 fw-bold">:: کارتون بی نظیره</span>
-                        </div>
-                        <div>
-                          <span className="text-highlight fs-6">
-                            <i className="fa-regular fa-star" />
-                            <i className="fa-regular fa-star" />
-                            <i className="fa-regular fa-star" />
-                          </span>
-                        </div>
-                      </div>
-                      <p className="fade-away lh-lg pt-3"> در این صورت می توان امید داشت که تمام و
-                        دشواری
-                        موجود در ارائه
-                        راهکارها و شرایط سخت تایپ به
-                        پایان رسد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                        راهکارها
-                        و شرایط سخت
-                        تایپ به پایان رسد.
-                        سارا محمدی
-                        مدیر بازاریابی
-                        :: عالی هستین!</p>
-                      <div>
-                        <div className="fs-5 fw-bold">امیر کمالی</div>
-                        <div className="fade-away">مدیر بازاریابی</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                  <div className={`${styles['box-Comment']} p-5`}>
-                      <div className="pb-4">
-                        <img className="rounded-circle" src="img/avatar-1.png" alt />
-                      </div>
-                      <div className=" d-flex justify-content-between justify-content-center align-items-center">
-                        <div>
-                          <span className="fs-5 fw-bold">:: کارتون بی نظیره</span>
-                        </div>
-                        <div>
-                          <span className="text-highlight fs-6">
-                            <i className="fa-regular fa-star" />
-                            <i className="fa-regular fa-star" />
-                            <i className="fa-regular fa-star" />
-                            <i className="fa-regular fa-star" />
-                          </span>
-                        </div>
-                      </div>
-                      <p className="fade-away lh-lg pt-3"> در این صورت می توان امید داشت که تمام و
-                        دشواری
-                        موجود در ارائه
-                        راهکارها و شرایط سخت تایپ به
-                        پایان رسد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                        راهکارها
-                        و شرایط سخت
-                        تایپ به پایان رسد.
-                        سارا محمدی
-                        مدیر بازاریابی
-                        :: عالی هستین!</p>
-                      <div>
-                        <div className="fs-5 fw-bold">امیر کمالی</div>
-                        <div className="fade-away">مدیر بازاریابی</div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="swiper-slide">
-                  <div className={`${styles['box-Comment']} p-5`}>
-                      <div className="pb-4">
-                        <img className="rounded-circle" src="img/avatar-2.png" alt />
-                      </div>
-                      <div className=" d-flex justify-content-between justify-content-center align-items-center">
-                        <div>
-                          <span className="fs-5 fw-bold ">:: کارتون بی نظیره</span>
-                        </div>
-                        <div>
-                          <span className="text-highlight fs-6">
-                            <i className="fa-regular fa-star" />
-                          </span>
-                        </div>
-                      </div>
-                      <p className="fade-away lh-lg pt-3"> در این صورت می توان امید داشت که تمام و
-                        دشواری
-                        موجود در ارائه
-                        راهکارها و شرایط سخت تایپ به
-                        پایان رسد در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه
-                        راهکارها
-                        و شرایط سخت
-                        تایپ به پایان رسد.
-                        سارا محمدی
-                        مدیر بازاریابی
-                        :: عالی هستین!</p>
-                      <div>
-                        <div className="fs-5 fw-bold">امیر کمالی</div>
-                        <div className="fade-away">مدیر بازاریابی</div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
                 {/* <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div> */}
@@ -649,7 +468,7 @@ export default function Home() {
             <div className="swiper-wrapper">
               <div className="swiper-slide">
                 <div className={`${styles['box-article']} p-4`}>
-                <div className={`${styles['img-article']} `}>
+                  <div className={`${styles['img-article']} `}>
                     <img src="img/article.jpg" alt />
                     <div className={`${styles['title-img']} `}>
                       <a href>مقاله</a>
@@ -662,214 +481,9 @@ export default function Home() {
                     <p className="text-lin-sm fade-away lh-lg pt-2">خانواده‌های با درآمد متوسط و کم اغلب با
                       چالش‌هایی در زمینه سرمایه‌گذاری روبرو هستند.</p>
                     <div className={`${styles['footer-article']} pt-4`}>
-                    <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                        <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
-                        </a>
-                      </span>
-                      <div className="fade-away">
-                        <span className="ps-3">
-                          <i className="fa-regular fa-calendar" />
-                          <span>5 بهمن 1403</span>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-message" />
-                          <span>1 دیدگاه</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-              <div className={`${styles['box-article']} p-4`}>
-              <div className={`${styles['img-article']} `}>
-                    <img src="img/article-1.jpg" alt />
-                    <div className={`${styles['title-img']} `}>
-                      <a href>مقاله</a>
-                    </div>
-                  </div>
-                  <div className="content-article">
-                    <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">چرا خرید بیمه بازنشستگی برای کودکان
-                      از
-                      شرکت بیمه کارآفرین یک فرصت طلایی است؟</a></h3>
-                    <p className="text-lin-sm fade-away lh-lg pt-2">خرید بیمه بازنشستگی برای کودک، فراتر از
-                      یک هدیه است؛ این یک سرمایه‌گذاری استراتژیک برای تضمین آینده مالی فرزند شماست. </p>
-                      <div className={`${styles['footer-article']} pt-4`}>
                       <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
                         <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
-                        </a>
-                      </span>
-                      <div className="fade-away">
-                        <span className="ps-3">
-                          <i className="fa-regular fa-calendar" />
-                          <span>5 بهمن 1403</span>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-message" />
-                          <span>1 دیدگاه</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-              <div className={`${styles['box-article']} p-4`}>
-              <div className={`${styles['img-article']} `}>
-                    <img src="img/article-2.png" alt />
-                    <div className={`${styles['title-img']} `}>
-                      <a href>مقاله</a>
-                    </div>
-                  </div>
-                  <div className="content-article">
-                    <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">تأثیر کیفیت کادوهای تولد بر روحیه
-                      جستجوگری کودکان</a></h3>
-                    <p className="text-lin-sm fade-away lh-lg pt-2">کادوهای تولد، تنها هدایایی مادی نیستند؛
-                      آن‌ها می‌توانند پل ارتباطی بین والدین و فرزندان باشند و بر رشد و توسعه شخصیت آن‌ها
-                      تأثیرگذار باشند.</p>
-                      <div className={`${styles['footer-article']} pt-4`}>
-                      <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                        <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
-                        </a>
-                      </span>
-                      <div className="fade-away">
-                        <span className="ps-3">
-                          <i className="fa-regular fa-calendar" />
-                          <span>5 بهمن 1403</span>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-message" />
-                          <span>1 دیدگاه</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-              <div className={`${styles['box-article']} p-4`}>
-              <div className={`${styles['img-article']} `}>
-                    <img src="img/article-1.jpg" alt />
-                    <div className={`${styles['title-img']} `}>
-                      <a href>مقاله</a>
-                    </div>
-                  </div>
-                  <div className="content-article">
-                    <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">بیمه بازنشستگی برای زنان خانه‌دار:
-                      یک
-                      سرمایه‌گذاری ارزشمند برای آینده</a></h3>
-                    <p className="text-lin-sm fade-away lh-lg pt-2">زنان خانه‌دار سهم بسیار مهمی در خانواده
-                      و جامعه دارند و نقش آن‌ها در تربیت نسل آینده و حفظ کانون خانواده غیرقابل انکار است.
-                    </p>
-                    <div className={`${styles['footer-article']} pt-4`}>
-                    <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                        <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
-                        </a>
-                      </span>
-                      <div className="fade-away">
-                        <span className="ps-3">
-                          <i className="fa-regular fa-calendar" />
-                          <span>5 بهمن 1403</span>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-message" />
-                          <span>1 دیدگاه</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-              <div className={`${styles['box-article']} p-4`}>
-              <div className={`${styles['img-article']} `}>
-                    <img src="img/article.jpg" alt />
-                    <div className={`${styles['title-img']} `}>
-                      <a href>مقاله</a>
-                    </div>
-                  </div>
-                  <div className="content-article">
-                    <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">بیمه بازنشستگی: تکمیل‌کننده‌ای ضروری
-                      برای سبد سرمایه‌گذاری خانواده</a></h3>
-                    <p className="text-lin-sm fade-away lh-lg pt-2">در دنیای پرشتاب امروز، برنامه‌ریزی برای
-                      آینده به ویژه دوران بازنشستگی، از اهمیت ویژه‌ای برخوردار است. </p>
-                      <div className={`${styles['footer-article']} pt-4`}>
-                      <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                        <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
-                        </a>
-                      </span>
-                      <div className="fade-away">
-                        <span className="ps-3">
-                          <i className="fa-regular fa-calendar" />
-                          <span>5 بهمن 1403</span>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-message" />
-                          <span>1 دیدگاه</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-              <div className={`${styles['box-article']} p-4`}>
-              <div className={`${styles['img-article']} `}>
-                    <img src="img/article-2.png" alt />
-                    <div className={`${styles['title-img']} `}>
-                      <a href>مقاله</a>
-                    </div>
-                  </div>
-                  <div className="content-article">
-                    <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">داشتن بیمه بازنشستگی در نوجوانی و
-                      جوانی:
-                      کلیدی برای روحیه و اعتماد به نفس</a></h3>
-                    <p className="text-lin-sm fade-away lh-lg pt-2">در دنیای امروز، داشتن بیمه بازنشستگی به
-                      یک ضرورت تبدیل شده است. با افزایش هزینه‌های زندگی و کاهش قدرت خرید، داشتن یک منبع
-                      درآمد پایدار در دوران بازنشستگی می‌تواند به شما کمک کند </p>
-                      <div className={`${styles['footer-article']} pt-4`}>
-                      <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                        <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
-                        </a>
-                      </span>
-                      <div className="fade-away">
-                        <span className="ps-3">
-                          <i className="fa-regular fa-calendar" />
-                          <span>5 بهمن 1403</span>
-                        </span>
-                        <span>
-                          <i className="fa-regular fa-message" />
-                          <span>1 دیدگاه</span>
-                        </span>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="swiper-slide">
-              <div className={`${styles['box-article']} p-4`}>
-                  <div className={`${styles['img-article']} `}>
-                    <img src="img/article-2.png" alt />
-                    <div className={`${styles['title-img']} `}>
-                      <a href>مقاله</a>
-                    </div>
-                  </div>
-                  <div className="content-article">
-                    <h3 className={`${styles['title-article']} h-3 fs-5 pt-3`}><a href="#">چرا برای آینده فرزندانمان سرمایه
-                      گذاری
-                      کنیم؟ اهمیت بیمه بازنشستگی در سبد سرمایه گذاری</a></h3>
-                    <p className="text-lin-sm fade-away lh-lg pt-2">آینده ای روشن برای فرزندانمان، هدفی است
-                      که همه والدین به دنبال آن هستند.</p>
-                      <div className={`${styles['footer-article']} pt-4`}>
-                      <span className={`${styles['btn-article']} d-flex justify-content-center align-items-center`}>
-                        <a href="#">
-                          <i className="fa-solid fa-arrow-left" />
+                          <FontAwesomeIcon icon={faArrowLeft} />
                         </a>
                       </span>
                       <div className="fade-away">
@@ -887,8 +501,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div> */}
           </div>
         </div>
       </section>
@@ -956,7 +568,7 @@ export default function Home() {
             </div>
             {/* sm */}
             <div className="col-12 d-md-none pt-3">
-              <div className={`${styles['mnu-footer']} accordion`}id="accordionExample">
+              <div className={`${styles['mnu-footer']} accordion`} id="accordionExample">
                 <div className="accordion-item">
                   <h2 className="h-2 accordion-header" id="headingOne">
                     <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -1021,16 +633,23 @@ export default function Home() {
             <div className={`${styles['communication']} mt-3`}>
               <div className={`${styles['logo-communication']} d-flex justify-content-center pt-2`}>
                 <div className="d-none d-md-block">
-                  <span><i className="fa-brands fa-whatsapp" /></span>
+                  <span>
+                    <i className="fa-brands fa-whatsapp" />
+                  </span>
                   <span><i className="fa-brands fa-instagram" /></span>
                   <span><i className="fa-brands fa-twitter" /></span>
-                  <span><i className="fa-solid fa-paper-plane" /></span>
-                  <span><i className="fa-brands fa-facebook" /></span>
+                  <span>
+                    <FontAwesomeIcon icon={faPaperPlane} />
+                  </span>
+                  <span><i className="fa-brands fa-twitter" /></span>
+
                 </div>
               </div>
               <div className={`${styles['communication-address']} d-flex justify-content-center pt-1`}>
                 <div className="p-2 fs-6">
-                  <span><i className="fa-solid fa-phone-flip" /></span>
+                  <span>
+                    <FontAwesomeIcon icon={faPhoneFlip} />
+                  </span>
                   <span className="fade-away ">تلفن: <span className="text-highlight ">09333362552</span></span>
                 </div>
                 <div className="p-2 fs-6">
@@ -1044,8 +663,8 @@ export default function Home() {
       </footer>
 
       <div className="d-none d-lg-block">
-        <a href="#"  className={`${styles['button-top']} d-flex`}>
-          <i className="fa-solid fa-arrow-up" />
+        <a href="#" className={`${styles['button-top']} d-flex`}>
+          <FontAwesomeIcon icon={faArrowUp} />
         </a>
       </div>
 
